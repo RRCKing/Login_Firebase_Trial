@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "101734343021",
+    "project_id": "yuklunchankingsite",
+    "storage_bucket": "yuklunchankingsite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101734343021:android:31f5ca66f311d0b5073a64",
+        "android_client_info": {
+          "package_name": "com.example.login_firebase_trial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101734343021-t0vep82qcehs1l4bfh4su27b1h2u5qdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaRwxHxGr-Z7XUvsEVfSHcN4K9elL4fHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101734343021-t0vep82qcehs1l4bfh4su27b1h2u5qdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
