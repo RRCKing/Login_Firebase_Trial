@@ -7,7 +7,7 @@
     android:background="@color/white"
     tools:context=".SignInActivity">
 
-
+    <!-- Email Text Input Layout -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailLayout"
         style="@style/LoginTextInputOuterFieldStyle"
@@ -22,15 +22,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Email Text Input Edit Text Field -->
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailEt"
+            android:id="@+id/etEmail"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Type your Email"
+            android:hint="@string/email_hint"
             android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Password Text Input Layout -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordLayout"
         style="@style/LoginTextInputOuterFieldStyle"
@@ -44,56 +46,65 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailLayout"
+        android:layout_marginBottom="20dp"
         app:passwordToggleEnabled="true">
 
+        <!-- Password Text Input Edit Text Field -->
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passET"
+            android:id="@+id/etPassword"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Type Your Password"
-            android:inputType="textPassword" />
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            tools:ignore="MissingConstraints" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Button For Email Sign In -->
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/btnSignIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:background="@color/yellow"
-        android:text="Sign In"
+        android:text="@string/btn_signin"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
+        app:layout_constraintVertical_bias="0.212" />
 
+    <!-- Button For Google Sign In -->
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/signInBtn"
+        android:id="@+id/btnGoogleSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:background="@color/yellow"
-        android:text="Google Sign In"
+        android:text="@string/btn_google_signin_label"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:backgroundTint="@color/yellow"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="509dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+        app:layout_constraintVertical_bias="0.188"
+        tools:ignore="MissingConstraints" />
 
+    <!-- Text View For Not Register Sign Up -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvNotRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Not Registered Yet , Sign Up !"
+        android:text="@string/text_not_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogleSignIn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
