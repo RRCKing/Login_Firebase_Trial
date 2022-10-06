@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Login_Firebase_Trial</string>
+    <string name="email_hint">Type your Email</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_google_signin_label">Google Sign In</string>
+    <string name="text_not_register">Not Registered Yet , Sign Up !</string>
+    <string name="password_hint">Type Your Password</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="text_Already_register">Already Registered , Sign In !</string>
 </resources>
